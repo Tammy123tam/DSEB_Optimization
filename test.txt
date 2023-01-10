@@ -1,0 +1,46 @@
+1. Unconstrained optimization
++ Without intial value:
+					minimize
+	f(x) =			2*x_1^2 + (x_2-x_1)^2 
+	
++ With intial value: Gradient + Newton method
+					minimize
+	f(x) = 			x_1^2 + 2(x_2- x_1)^2
+	initial values		6 6
+	max interations		5
+	
+2. Constrained optimization
++ Linear Programming Problem (Simplex)
+					minimize
+ 	cost function		-12*x_1 - 3*x_2 - x_3 
+	number of constraints	3
+	Adding contraint #1	10*x_1 + 2*x_2 + x_3 <= 100 
+	Adding contraint #2	7*x_1 + 3*x_2 + 2*x_3 <= 77
+	Adding contraint #3	2*x_1 + 4*x_2 + x_3 <= 80 
+
++ Non-linear Programming Problem
+  . Under equality constraints
+					minimize
+	f =				x_1^2 + x_2^2 
+	Number of 
+	equality constrained	1
+	constraint1	(= 0)		x_1 + x_2 - 2
+
+  . Under equality and inequality constraints (KKT)
+					minimize
+	f =				x_1^2 + 4*x_2^2
+	Number of
+	equality constrained	1
+	Constraints h1 = 0	x_1 + 2*x_2 -2 
+	Number of 
+	inequality constrained 	1
+	Constraint g1 <= 0	-x_1^2-2*x_2^2+4 
+	
+3. Travelling salesman 
+	number of nodes		5
+	node 1			1 4
+	node 2			5 9
+	node 3			7 9
+	node 4			4 0
+	node 5			2 7
+	start with node		3 
